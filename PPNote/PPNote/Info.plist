@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Transport Security Settings -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>apinote.ppdeveloper.xyz</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.0</string>
+			</dict>
+		</dict>
+	</dict>
+	
+	<!-- Camera Access Permission -->
+	<key>NSCameraUsageDescription</key>
+	<string>PPNote cần quyền truy cập camera để chụp ảnh và thêm vào ghi chú của bạn</string>
+	
+	<!-- Photo Library Access Permission -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>PPNote cần quyền truy cập thư viện ảnh để chọn ảnh và thêm vào ghi chú của bạn</string>
+	
+	<!-- Photo Library Add Permission (iOS 11+) -->
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>PPNote cần quyền lưu ảnh vào thư viện ảnh của bạn</string>
+	
+	<!-- Microphone Access (if needed for video recording) -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>PPNote cần quyền truy cập microphone để ghi âm video cho ghi chú của bạn</string>
+	
+	<!-- Document Folder Access -->
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	
+	<!-- Document Types Support -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>txt</string>
+				<string>md</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>Text Document</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+		</dict>
+	</array>
+</dict>
+</plist>

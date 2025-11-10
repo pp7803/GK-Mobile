@@ -26,7 +26,7 @@
 
 ## </div>
 
-## �📋 Mục Lục
+## 📋 Mục Lục
 
 - [Tính Năng](#-tính-năng)
 - [Kiến Trúc Ứng Dụng](#️-kiến-trúc-ứng-dụng)
